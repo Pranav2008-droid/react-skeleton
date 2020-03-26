@@ -1,0 +1,102 @@
+  
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  body {
+    font-family: sans-serif;
+  }
+  
+  header {
+    height: 100vh;
+    background: linear-gradient(to right top, #134E5E, #71B280);
+    background-size: cover;
+  }
+
+  header p{
+    color: rgb(255, 2, 255);
+    font-family: monospace;
+    font-size: 20px;
+    margin: 0.5cm;
+  }
+  nav ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    list-style: none;
+    background: rgb(250, 250, 250);
+    position: fixed;
+    top: 0px;
+    right: 0px;
+    width: 100%;
+    height: 10vh;
+  }
+  nav a {
+    color: black;
+    text-decoration: none;
+    font-size: 18px;
+    position: relative;
+  }
+  nav li {
+    overflow: hidden;
+    height: 25px;
+  }
+  nav a::after {
+    content: "";
+    position: absolute;
+    height: 100%;
+    top: 0;
+    left: 0;
+    width: 100%;
+    border-bottom: 2px solid green;
+    transform: translateX(-100%);
+    transition: transform 0.5s ease;
+  }
+  
+  #one,
+  #getting_started,
+  #Learn {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+  }
+#one{
+    background: linear-gradient(to right top ,#00d2ff, #3a7bd5);
+}
+#getting_started{
+    background: linear-gradient(to top right, #3D7EAA, #FFE47A);
+}
+#Learn{
+    background: linear-gradient(to right top, #00ccff, #00ffc8);
+
+}
+
+#Learn a{
+  font-size: 60px;
+  text-decoration: none;
+}
+  
+  a.active::after {
+    transform: translateX(0%);
+  }
+
+.get_started a{
+
+  color: rgb(255, 0, 64);
+  text-decoration: none;
+  font-size: 28px;
+  position: sticky;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.get_started{
+  border: 10px rgba(17, 0, 255, 0.534);
+  background: rgba(76, 0, 130, 0.404);
+  height: 10%;
+  height: 40px;
+  margin: 20px;
+}
+
